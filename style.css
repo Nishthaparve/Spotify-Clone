@@ -434,3 +434,25 @@ a{
         width:80px;
     }
 }
+/* Fix content hidden behind music player */
+.main-content{
+    padding-bottom: 90px;
+}
+
+/* Mobile Fix */
+@media (max-width:768px){
+
+    .main{
+        height:auto;
+    }
+
+    .main-content{
+        height:auto;
+        padding-bottom:140px;
+    }
+
+    .music-player{
+        height:auto;
+    }
+
+}
