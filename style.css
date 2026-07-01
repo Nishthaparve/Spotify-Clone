@@ -299,3 +299,138 @@ a{
 .controls i:last-child {
     margin-right: 1.5rem;
 }
+/* ==========================
+   Responsive Design
+========================== */
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+
+    .sidebar{
+        width:260px;
+    }
+
+    .card{
+        width:180px;
+    }
+
+    .sticky-nav-options .hide{
+        display:none;
+    }
+
+    .player{
+        width:45%;
+    }
+
+    .controls{
+        width:30%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width:768px){
+
+    .sidebar{
+        display:none;
+    }
+
+    .main-content{
+        margin-left:0;
+        width:100%;
+        padding:1rem;
+    }
+
+    .sticky-nav{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .sticky-nav-options{
+        width:100%;
+        justify-content:space-between;
+    }
+
+    .cards-container{
+        justify-content:center;
+    }
+
+    .card{
+        width:90%;
+        margin-left:0;
+    }
+
+    .music-player{
+        flex-direction:column;
+        height:auto;
+        padding:10px;
+    }
+
+    .album,
+    .player,
+    .controls{
+        width:100%;
+        justify-content:center;
+        margin:8px 0;
+    }
+
+    .playback-bar{
+        width:100%;
+    }
+
+    .progress-bar{
+        width:90%;
+    }
+
+    .volume-bar{
+        width:120px;
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width:480px){
+
+    .sticky-nav-icons img{
+        height:22px;
+    }
+
+    .badge{
+        font-size:0.75rem;
+        padding:0.25rem 0.75rem;
+    }
+
+    .card-title{
+        font-size:0.9rem;
+    }
+
+    .card-info{
+        font-size:0.75rem;
+    }
+
+    .album-img{
+        height:45px;
+        width:45px;
+    }
+
+    .album-title{
+        font-size:0.75rem;
+    }
+
+    .album-author{
+        font-size:0.6rem;
+    }
+
+    .player-control-icon{
+        height:0.85rem;
+        margin-right:1rem;
+    }
+
+    .control-icon{
+        font-size:0.9rem;
+        margin-right:0.6rem;
+    }
+
+    .volume-bar{
+        width:80px;
+    }
+}
